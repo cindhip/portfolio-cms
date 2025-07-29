@@ -6,6 +6,9 @@ export const Certificate: CollectionConfig = {
     useAsTitle: 'title',
     group: 'Portfolio',
   },
+  access: {
+    read: () => true,
+  },
   fields: [
     {
       name: 'title',
