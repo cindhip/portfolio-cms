@@ -4,6 +4,7 @@ export const Project: CollectionConfig = {
   slug: 'projects',
   admin: {
     useAsTitle: 'title',
+    group: 'Portfolio',
   },
   fields: [
     {

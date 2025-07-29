@@ -4,6 +4,7 @@ export const Certificate: CollectionConfig = {
   slug: 'certificates',
   admin: {
     useAsTitle: 'title',
+    group: 'Portfolio',
   },
   fields: [
     {

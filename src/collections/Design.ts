@@ -4,6 +4,7 @@ export const Design: CollectionConfig = {
   slug: 'designs',
   admin: {
     useAsTitle: 'title',
+    group: 'Portfolio',
   },
   fields: [
     {
