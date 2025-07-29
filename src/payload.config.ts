@@ -25,6 +25,7 @@ export default buildConfig({
     },
   },
   collections: [Users, Media, Certificate, Design, Project],
+  cors: '*',
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
