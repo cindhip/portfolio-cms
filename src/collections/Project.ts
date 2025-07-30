@@ -23,21 +23,9 @@ export const Project: CollectionConfig = {
     },
     {
       name: 'images',
-      type: 'array',
-      fields: [
-        {
-          name: 'url',
-          type: 'upload',
-          relationTo: 'media',
-        },
-        {
-          name: 'cloudinary_id',
-          type: 'text',
-          admin: {
-            description: 'Cloudinary ID for this image',
-          },
-        },
-      ],
+      type: 'upload',
+      relationTo: 'media',
+      hasMany: true,
     },
     {
       name: 'cloudinary_id',

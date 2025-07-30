@@ -201,16 +201,7 @@ export interface Project {
   id: string;
   title: string;
   thumbnail: string | Media;
-  images?:
-    | {
-        url?: (string | null) | Media;
-        /**
-         * Cloudinary ID for this image
-         */
-        cloudinary_id?: string | null;
-        id?: string | null;
-      }[]
-    | null;
+  images?: (string | Media)[] | null;
   /**
    * Cloudinary ID for the thumbnail
    */
@@ -357,13 +348,7 @@ export interface DesignsSelect<T extends boolean = true> {
 export interface ProjectsSelect<T extends boolean = true> {
   title?: T;
   thumbnail?: T;
-  images?:
-    | T
-    | {
-        url?: T;
-        cloudinary_id?: T;
-        id?: T;
-      };
+  images?: T;
   cloudinary_id?: T;
   updatedAt?: T;
   createdAt?: T;
