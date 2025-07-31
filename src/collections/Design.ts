@@ -21,13 +21,6 @@ export const Design: CollectionConfig = {
       relationTo: 'media',
       required: true,
     },
-    {
-      name: 'cloudinary_id',
-      type: 'text',
-      admin: {
-        description: 'Cloudinary ID for the thumbnail',
-      },
-    },
   ],
   timestamps: true,
 }

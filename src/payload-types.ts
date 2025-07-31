@@ -171,10 +171,6 @@ export interface Certificate {
   id: string;
   title: string;
   image: string | Media;
-  /**
-   * Cloudinary ID for the image
-   */
-  cloudinary_id?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -186,10 +182,6 @@ export interface Design {
   id: string;
   title: string;
   thumbnail: string | Media;
-  /**
-   * Cloudinary ID for the thumbnail
-   */
-  cloudinary_id?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -202,10 +194,6 @@ export interface Project {
   title: string;
   thumbnail: string | Media;
   images?: (string | Media)[] | null;
-  /**
-   * Cloudinary ID for the thumbnail
-   */
-  cloudinary_id?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -326,7 +314,6 @@ export interface MediaSelect<T extends boolean = true> {
 export interface CertificatesSelect<T extends boolean = true> {
   title?: T;
   image?: T;
-  cloudinary_id?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -337,7 +324,6 @@ export interface CertificatesSelect<T extends boolean = true> {
 export interface DesignsSelect<T extends boolean = true> {
   title?: T;
   thumbnail?: T;
-  cloudinary_id?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -349,7 +335,6 @@ export interface ProjectsSelect<T extends boolean = true> {
   title?: T;
   thumbnail?: T;
   images?: T;
-  cloudinary_id?: T;
   updatedAt?: T;
   createdAt?: T;
 }

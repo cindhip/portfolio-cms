@@ -27,13 +27,6 @@ export const Project: CollectionConfig = {
       relationTo: 'media',
       hasMany: true,
     },
-    {
-      name: 'cloudinary_id',
-      type: 'text',
-      admin: {
-        description: 'Cloudinary ID for the thumbnail',
-      },
-    },
   ],
   timestamps: true,
 }
